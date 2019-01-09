@@ -1,0 +1,51 @@
+# python files and dirs
+*.pyc
+*.pyo
+*.egg
+*.egg-info
+docs/source/*.html
+docs/source/*.h5
+docs/source/images
+docs/source/_*
+dist
+*build/
+eggs
+parts
+
+# installer logs
+pip-log.txt
+
+# Unit test / coverage reports
+.coverage
+.tox
+
+# temp files
+*~
+*.log
+*.kate-swp
+*.swp
+*cache
+
+# idea / pycharm files
+.idea
+*.iml
+
+# library files 
+*.so
+*.dll
+
+# hdf5 test files
+*.h5
+
+# kdevelop files
+*kdev*
+Makefile
+
+.DS_Store
+.cache
+.eggs
+.mypy_cache
+
+# exclude source files in github page branch
+nixio*
+
