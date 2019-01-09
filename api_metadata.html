@@ -1,53 +1,34 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>API Documentation for Metadata &mdash; Python bindings for NIX 1.1.0 Release documentation</title>
-    
+    <title>API Documentation for Metadata &#8212; Python bindings for NIX 1.4.7 Release documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '1.1.0 Release',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="Python bindings for NIX 1.1.0 Release documentation" href="index.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
     <link rel="prev" title="API Documentation for Data" href="api_data.html" />
    
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
-  </head>
-  <body>
-    <div class="related">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             accesskey="I">index</a></li>
-        <li class="right" >
-          <a href="api_data.html" title="API Documentation for Data"
-             accesskey="P">previous</a> |</li>
-        <li><a href="index.html">Python bindings for NIX 1.1.0 Release documentation</a> &raquo;</li> 
-      </ul>
-    </div>  
+  </head><body>
+  
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="api-documentation-for-metadata">
 <h1>API Documentation for Metadata<a class="headerlink" href="#api-documentation-for-metadata" title="Permalink to this headline">¶</a></h1>
@@ -63,8 +44,8 @@ odML-terminology that standardizes without restricting to the terms defined with
 <p>Metadata stored in a NIX file can be accessed directly from an open file.</p>
 <div class="section" id="create-and-delete-sub-sections">
 <h3>Create and delete sub sections<a class="headerlink" href="#create-and-delete-sub-sections" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2</pre></div></td><td class="code"><div class="highlight"><pre><span class="n">sub</span> <span class="o">=</span> <span class="n">section</span><span class="o">.</span><span class="n">create_section</span><span class="p">(</span><span class="s">&quot;a name&quot;</span><span class="p">,</span> <span class="s">&quot;type&quot;</span><span class="p">)</span>
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">sub</span> <span class="o">=</span> <span class="n">section</span><span class="o">.</span><span class="n">create_section</span><span class="p">(</span><span class="s2">&quot;a name&quot;</span><span class="p">,</span> <span class="s2">&quot;type&quot;</span><span class="p">)</span>
 <span class="k">del</span> <span class="n">section</span><span class="o">.</span><span class="n">sections</span><span class="p">[</span><span class="n">sub</span><span class="p">]</span>
 </pre></div>
 </td></tr></table></div>
@@ -73,7 +54,7 @@ odML-terminology that standardizes without restricting to the terms defined with
 <h3>Add and remove properties<a class="headerlink" href="#add-and-remove-properties" title="Permalink to this headline">¶</a></h3>
 <p>Properties  can be created using the create_property method. Existing properties can be accessed and deleted
 directly from the respective section.</p>
-<div class="highlight-python"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+<div class="highlight-python notranslate"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
  3
  4
@@ -88,53 +69,72 @@ directly from the respective section.</p>
 13
 14
 15
-16</pre></div></td><td class="code"><div class="highlight"><pre><span class="n">section</span><span class="o">.</span><span class="n">create_property</span><span class="p">(</span><span class="s">&quot;one&quot;</span><span class="p">,</span> <span class="p">[</span><span class="n">Value</span><span class="p">(</span><span class="mi">1</span><span class="p">)])</span>
-<span class="n">section</span><span class="o">.</span><span class="n">create_property</span><span class="p">(</span><span class="s">&quot;two&quot;</span><span class="p">,</span> <span class="p">[</span><span class="n">Value</span><span class="p">(</span><span class="mi">2</span><span class="p">)])</span>
+16</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">section</span><span class="o">.</span><span class="n">create_property</span><span class="p">(</span><span class="s2">&quot;one&quot;</span><span class="p">,</span> <span class="p">[</span><span class="n">Value</span><span class="p">(</span><span class="mi">1</span><span class="p">)])</span>
+<span class="n">section</span><span class="o">.</span><span class="n">create_property</span><span class="p">(</span><span class="s2">&quot;two&quot;</span><span class="p">,</span> <span class="p">[</span><span class="n">Value</span><span class="p">(</span><span class="mi">2</span><span class="p">)])</span>
 
-<span class="c"># iterate over properties</span>
+<span class="c1"># iterate over properties</span>
 <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">section</span><span class="p">:</span>
    <span class="k">print</span><span class="p">(</span><span class="n">p</span><span class="p">)</span>
 
-<span class="c"># access by name</span>
-<span class="n">one</span> <span class="o">=</span> <span class="n">section</span><span class="p">[</span><span class="s">&quot;one&quot;</span><span class="p">]</span>
+<span class="c1"># access by name</span>
+<span class="n">one</span> <span class="o">=</span> <span class="n">section</span><span class="p">[</span><span class="s2">&quot;one&quot;</span><span class="p">]</span>
 
-<span class="c"># convert properties into a dict</span>
+<span class="c1"># convert properties into a dict</span>
 <span class="n">dct</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">section</span><span class="o">.</span><span class="n">items</span><span class="p">())</span>
 
-<span class="c"># delete properties</span>
-<span class="k">del</span> <span class="n">section</span><span class="p">[</span><span class="s">&quot;one&quot;</span><span class="p">]</span>
-<span class="k">del</span> <span class="n">section</span><span class="p">[</span><span class="s">&quot;two&quot;</span><span class="p">]</span>
+<span class="c1"># delete properties</span>
+<span class="k">del</span> <span class="n">section</span><span class="p">[</span><span class="s2">&quot;one&quot;</span><span class="p">]</span>
+<span class="k">del</span> <span class="n">section</span><span class="p">[</span><span class="s2">&quot;two&quot;</span><span class="p">]</span>
 </pre></div>
 </td></tr></table></div>
 </div>
 <div class="section" id="section-api">
 <h3>Section API<a class="headerlink" href="#section-api" title="Permalink to this headline">¶</a></h3>
 <dl class="class">
-<dt id="nix.Section">
-<em class="property">class </em><tt class="descclassname">nix.</tt><tt class="descname">Section</tt><big>(</big><em>(object)arg1</em><big>)</big><a class="headerlink" href="#nix.Section" title="Permalink to this definition">¶</a></dt>
+<dt id="nixio.pycore.Section">
+<em class="property">class </em><code class="descclassname">nixio.pycore.</code><code class="descname">Section</code><span class="sig-paren">(</span><em>nixparent</em>, <em>h5group</em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.pycore.Section" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="method">
-<dt id="nix.Section.create_property">
-<tt class="descname">create_property</tt><big>(</big><em>(Section)arg1</em>, <em>(str)arg2</em>, <em>(object)arg3</em><big>)</big> &rarr; Property<a class="headerlink" href="#nix.Section.create_property" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dt id="nixio.pycore.Section.create_property">
+<code class="descname">create_property</code><span class="sig-paren">(</span><em>name</em>, <em>values</em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.pycore.Section.create_property" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add a new property to the section.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>name</strong> (<a class="reference external" href="https://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) – The name of the property to create.</li>
+<li><strong>values</strong> (<em>list of Value</em>) – The values of the property.</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The newly created property.</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#nixio.pycore.Property" title="nixio.pycore.Property">Property</a></p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
 
 <dl class="method">
-<dt id="nix.Section.create_section">
-<tt class="descname">create_section</tt><big>(</big><em>(Section)arg1</em>, <em>(str)arg2</em>, <em>(str)arg3</em><big>)</big> &rarr; Section :<a class="headerlink" href="#nix.Section.create_section" title="Permalink to this definition">¶</a></dt>
+<dt id="nixio.pycore.Section.create_section">
+<code class="descname">create_section</code><span class="sig-paren">(</span><em>name</em>, <em>type_</em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.pycore.Section.create_section" title="Permalink to this definition">¶</a></dt>
 <dd><p>Creates a new subsection that is a child of this section entity.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) &#8211; The name of the section to create.</li>
-<li><strong>type</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) &#8211; The type of the section.</li>
+<li><strong>name</strong> (<a class="reference external" href="https://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) – The name of the section to create.</li>
+<li><strong>type</strong> (<a class="reference external" href="https://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) – The type of the section.</li>
 </ul>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The newly created section.</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">Section</p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference internal" href="#nixio.pycore.Section" title="nixio.pycore.Section">Section</a></p>
 </td>
 </tr>
 </tbody>
@@ -142,25 +142,26 @@ directly from the respective section.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="nix.Section.created_at">
-<tt class="descname">created_at</tt><a class="headerlink" href="#nix.Section.created_at" title="Permalink to this definition">¶</a></dt>
-<dd><p>The creation time of the entity. This is a read-only property. Use :py:meth:force_created_at in order to
-change the creation time.</p>
+<dt id="nixio.pycore.Section.created_at">
+<code class="descname">created_at</code><a class="headerlink" href="#nixio.pycore.Section.created_at" title="Permalink to this definition">¶</a></dt>
+<dd><p>The creation time of the entity. This is a read-only property.
+Use <cite>force_created_at</cite> in order to change the creation time.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">int</td>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)">int</a></td>
 </tr>
 </tbody>
 </table>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="nix.Section.definition">
-<tt class="descname">definition</tt><a class="headerlink" href="#nix.Section.definition" title="Permalink to this definition">¶</a></dt>
-<dd><p>The definition of the entity. The definition can contain a textual description of the
-entity. This is an optional read-write property, and can be None if no definition is available.</p>
+<dt id="nixio.pycore.Section.definition">
+<code class="descname">definition</code><a class="headerlink" href="#nixio.pycore.Section.definition" title="Permalink to this definition">¶</a></dt>
+<dd><p>The definition of the entity. The definition can contain a textual
+description of the entity. This is an optional read-write
+property, and can be None if no definition is available.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -171,18 +172,33 @@ entity. This is an optional read-write property, and can be None if no definitio
 </table>
 </dd></dl>
 
-<dl class="method">
-<dt id="nix.Section.find_related">
-<tt class="descname">find_related</tt><big>(</big><em>filtr=&lt;function &lt;lambda&gt; at 0x7f41e5ff0230&gt;</em><big>)</big><a class="headerlink" href="#nix.Section.find_related" title="Permalink to this definition">¶</a></dt>
-<dd><p>Get all related sections of this section.</p>
-<p>The result can be filtered. On each related section a filter is applied. If the filter
-returns true the respective section will be added to the result list. By default a filter
-is used that accepts all sections.</p>
+<dl class="attribute">
+<dt id="nixio.pycore.Section.file">
+<code class="descname">file</code><a class="headerlink" href="#nixio.pycore.Section.file" title="Permalink to this definition">¶</a></dt>
+<dd><p>Root file object.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>filtr</strong> (<em>function</em>) &#8211; A filter function</td>
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">File</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="nixio.pycore.Section.find_related">
+<code class="descname">find_related</code><span class="sig-paren">(</span><em>filtr=&lt;function SectionMixin.&lt;lambda&gt;&gt;</em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.pycore.Section.find_related" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all related sections of this section.</p>
+<p>The result can be filtered. On each related section a filter is
+applied.  If the filter returns true the respective section will be
+added to the result list. By default a filter is used that accepts all
+sections.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>filtr</strong> (<em>function</em>) – A filter function</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A list containing the matching related sections.</td>
 </tr>
@@ -193,21 +209,21 @@ is used that accepts all sections.</p>
 </dd></dl>
 
 <dl class="method">
-<dt id="nix.Section.find_sections">
-<tt class="descname">find_sections</tt><big>(</big><em>filtr=&lt;function &lt;lambda&gt; at 0x7f41e5ff0140&gt;</em>, <em>limit=9223372036854775807</em><big>)</big><a class="headerlink" href="#nix.Section.find_sections" title="Permalink to this definition">¶</a></dt>
-<dd><p>Get all child sections recursively.</p>
-<p>This method traverses the trees of all sections. The traversal
-is accomplished via breadth first and can be limited in depth. On each node or
-section a filter is applied. If the filter returns true the respective section
-will be added to the result list.
-By default a filter is used that accepts all sections.</p>
+<dt id="nixio.pycore.Section.find_sections">
+<code class="descname">find_sections</code><span class="sig-paren">(</span><em>filtr=&lt;function SectionMixin.&lt;lambda&gt;&gt;</em>, <em>limit=None</em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.pycore.Section.find_sections" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all child sections recursively.
+This method traverses the trees of all sections. The traversal is
+accomplished via breadth first and can be limited in depth.
+On each node or section a filter is applied.
+If the filter returns true the respective section will be added to the
+result list.  By default a filter is used that accepts all sections.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>filtr</strong> (<em>function</em>) &#8211; A filter function</li>
-<li><strong>limit</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><em>int</em></a>) &#8211; The maximum depth of traversal</li>
+<li><strong>filtr</strong> (<em>function</em>) – A filter function</li>
+<li><strong>limit</strong> (<a class="reference external" href="https://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><em>int</em></a>) – The maximum depth of traversal</li>
 </ul>
 </td>
 </tr>
@@ -222,102 +238,102 @@ By default a filter is used that accepts all sections.</p>
 </dd></dl>
 
 <dl class="method">
-<dt id="nix.Section.force_created_at">
-<tt class="descname">force_created_at</tt><big>(</big><em>(__EntitySection)arg1</em>, <em>(int)arg2</em><big>)</big> &rarr; None :<a class="headerlink" href="#nix.Section.force_created_at" title="Permalink to this definition">¶</a></dt>
-<dd><p>Sets the creation time created_at to the given time.</p>
+<dt id="nixio.pycore.Section.force_created_at">
+<code class="descname">force_created_at</code><span class="sig-paren">(</span><em>t=None</em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.pycore.Section.force_created_at" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the creation time <cite>created_at</cite> to the given time
+(default: current time).</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>time</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><em>int</em></a>) &#8211; The time to set</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">None</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>t</strong> (<a class="reference external" href="https://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><em>int</em></a>) – The time to set.</td>
 </tr>
 </tbody>
 </table>
 </dd></dl>
 
 <dl class="method">
-<dt id="nix.Section.force_updated_at">
-<tt class="descname">force_updated_at</tt><big>(</big><em>(__EntitySection)arg1</em><big>)</big> &rarr; None :<a class="headerlink" href="#nix.Section.force_updated_at" title="Permalink to this definition">¶</a></dt>
-<dd><p>Sets the update time updated_at to the current time.</p>
+<dt id="nixio.pycore.Section.force_updated_at">
+<code class="descname">force_updated_at</code><span class="sig-paren">(</span><em>t=None</em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.pycore.Section.force_updated_at" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the update time <cite>updated_at</cite> to the given time.
+(default: current time)</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">None</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>t</strong> (<a class="reference external" href="https://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><em>int</em></a>) – The time to set.</td>
 </tr>
 </tbody>
 </table>
 </dd></dl>
 
 <dl class="method">
-<dt id="nix.Section.get_property_by_name">
-<tt class="descname">get_property_by_name</tt><big>(</big><em>(Section)arg1</em>, <em>(str)arg2</em><big>)</big> &rarr; object :<a class="headerlink" href="#nix.Section.get_property_by_name" title="Permalink to this definition">¶</a></dt>
+<dt id="nixio.pycore.Section.get_property_by_name">
+<code class="descname">get_property_by_name</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.pycore.Section.get_property_by_name" title="Permalink to this definition">¶</a></dt>
 <dd><p>Get a property by its name.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) &#8211; The name to check.</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<a class="reference external" href="https://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) – The name to check.</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The property with the given name.</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">Property</td>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference internal" href="#nixio.pycore.Property" title="nixio.pycore.Property">Property</a></td>
 </tr>
 </tbody>
 </table>
 </dd></dl>
 
 <dl class="method">
-<dt id="nix.Section.has_property_by_name">
-<tt class="descname">has_property_by_name</tt><big>(</big><em>(Section)arg1</em>, <em>(str)arg2</em><big>)</big> &rarr; bool :<a class="headerlink" href="#nix.Section.has_property_by_name" title="Permalink to this definition">¶</a></dt>
+<dt id="nixio.pycore.Section.has_property_by_name">
+<code class="descname">has_property_by_name</code><span class="sig-paren">(</span><em>name</em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.pycore.Section.has_property_by_name" title="Permalink to this definition">¶</a></dt>
 <dd><p>Checks whether a section has a property with a certain name.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) &#8211; The name to check.</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>name</strong> (<a class="reference external" href="https://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)"><em>str</em></a>) – The name to check.</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">True if the section has a property with the given name,
 False otherwise.</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">bool</td>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#bool" title="(in Python v2.7)">bool</a></td>
 </tr>
 </tbody>
 </table>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="nix.Section.id">
-<tt class="descname">id</tt><a class="headerlink" href="#nix.Section.id" title="Permalink to this definition">¶</a></dt>
-<dd><p>A property providing the ID of the Entity. The id is generated automatically,
-therefore the property is read-only.</p>
+<dt id="nixio.pycore.Section.id">
+<code class="descname">id</code><a class="headerlink" href="#nixio.pycore.Section.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A property providing the ID of the Entity. The id is generated
+automatically, therefore the property is read-only.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">str</td>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)">str</a></td>
 </tr>
 </tbody>
 </table>
 </dd></dl>
 
 <dl class="method">
-<dt id="nix.Section.inherited_properties">
-<tt class="descname">inherited_properties</tt><big>(</big><em>(Section)arg1</em><big>)</big> &rarr; object<a class="headerlink" href="#nix.Section.inherited_properties" title="Permalink to this definition">¶</a></dt>
+<dt id="nixio.pycore.Section.inherited_properties">
+<code class="descname">inherited_properties</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.pycore.Section.inherited_properties" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
-<dt id="nix.Section.items">
-<tt class="descname">items</tt><big>(</big><big>)</big><a class="headerlink" href="#nix.Section.items" title="Permalink to this definition">¶</a></dt>
+<dt id="nixio.pycore.Section.items">
+<code class="descname">items</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.pycore.Section.items" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attribute">
-<dt id="nix.Section.link">
-<tt class="descname">link</tt><a class="headerlink" href="#nix.Section.link" title="Permalink to this definition">¶</a></dt>
-<dd><p>Link to another section. If a section is linked to another section, the
-linking section inherits all properties from the target section.
+<dt id="nixio.pycore.Section.link">
+<code class="descname">link</code><a class="headerlink" href="#nixio.pycore.Section.link" title="Permalink to this definition">¶</a></dt>
+<dd><p>Link to another section. If a section is linked to another section,
+the linking section inherits all properties from the target section.
 This is an optional read-write property and may be set to None.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
@@ -330,10 +346,16 @@ This is an optional read-write property and may be set to None.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="nix.Section.mapping">
-<tt class="descname">mapping</tt><a class="headerlink" href="#nix.Section.mapping" title="Permalink to this definition">¶</a></dt>
-<dd><p>The mapping information of the section.
-This is an optional read-write property and may be set to None.</p>
+<dt id="nixio.pycore.Section.mapping">
+<code class="descname">mapping</code><a class="headerlink" href="#nixio.pycore.Section.mapping" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nixio.pycore.Section.name">
+<code class="descname">name</code><a class="headerlink" href="#nixio.pycore.Section.name" title="Permalink to this definition">¶</a></dt>
+<dd><p>The name of an entity. The name serves as a human readable
+identifier. This is a read-only property; entities cannot be
+renamed.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -345,25 +367,11 @@ This is an optional read-write property and may be set to None.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="nix.Section.name">
-<tt class="descname">name</tt><a class="headerlink" href="#nix.Section.name" title="Permalink to this definition">¶</a></dt>
-<dd><p>The name of an entity. The name serves as a human readable identifier.
-This is a read-write property, but it can&#8217;t be set to None.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">str</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="nix.Section.parent">
-<tt class="descname">parent</tt><a class="headerlink" href="#nix.Section.parent" title="Permalink to this definition">¶</a></dt>
+<dt id="nixio.pycore.Section.parent">
+<code class="descname">parent</code><a class="headerlink" href="#nixio.pycore.Section.parent" title="Permalink to this definition">¶</a></dt>
 <dd><p>The parent section. This is a read-only property. For root sections
 this property is always None.</p>
+<p>Accessing this property can be slow when the metadata tree is large.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -374,12 +382,19 @@ this property is always None.</p>
 </table>
 </dd></dl>
 
+<dl class="method">
+<dt id="nixio.pycore.Section.pprint">
+<code class="descname">pprint</code><span class="sig-paren">(</span><em>current_depth=0</em>, <em>max_depth=1</em>, <em>indent=2</em>, <em>max_length=80</em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.pycore.Section.pprint" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
 <dl class="attribute">
-<dt id="nix.Section.props">
-<tt class="descname">props</tt><a class="headerlink" href="#nix.Section.props" title="Permalink to this definition">¶</a></dt>
-<dd><p>A property containing all Property entities associated with the section. Properties can
-be accessed by index of via their id. Properties can be deleted from the list. Adding
-new properties is done using the create_property method. This is a read-only attribute.</p>
+<dt id="nixio.pycore.Section.props">
+<code class="descname">props</code><a class="headerlink" href="#nixio.pycore.Section.props" title="Permalink to this definition">¶</a></dt>
+<dd><p>A property containing all Property entities associated with the
+section.  Properties can be accessed by index of via their id.
+Properties can be deleted from the list. Adding new properties is done
+using the create_property method.
+This is a read-only attribute.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -391,8 +406,43 @@ new properties is done using the create_property method. This is a read-only att
 </dd></dl>
 
 <dl class="attribute">
-<dt id="nix.Section.repository">
-<tt class="descname">repository</tt><a class="headerlink" href="#nix.Section.repository" title="Permalink to this definition">¶</a></dt>
+<dt id="nixio.pycore.Section.referring_blocks">
+<code class="descname">referring_blocks</code><a class="headerlink" href="#nixio.pycore.Section.referring_blocks" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nixio.pycore.Section.referring_data_arrays">
+<code class="descname">referring_data_arrays</code><a class="headerlink" href="#nixio.pycore.Section.referring_data_arrays" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nixio.pycore.Section.referring_groups">
+<code class="descname">referring_groups</code><a class="headerlink" href="#nixio.pycore.Section.referring_groups" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nixio.pycore.Section.referring_multi_tags">
+<code class="descname">referring_multi_tags</code><a class="headerlink" href="#nixio.pycore.Section.referring_multi_tags" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nixio.pycore.Section.referring_objects">
+<code class="descname">referring_objects</code><a class="headerlink" href="#nixio.pycore.Section.referring_objects" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nixio.pycore.Section.referring_sources">
+<code class="descname">referring_sources</code><a class="headerlink" href="#nixio.pycore.Section.referring_sources" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nixio.pycore.Section.referring_tags">
+<code class="descname">referring_tags</code><a class="headerlink" href="#nixio.pycore.Section.referring_tags" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nixio.pycore.Section.repository">
+<code class="descname">repository</code><a class="headerlink" href="#nixio.pycore.Section.repository" title="Permalink to this definition">¶</a></dt>
 <dd><p>URL to the terminology repository the section is associated with.
 This is an optional read-write property and may be set to None.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -406,13 +456,14 @@ This is an optional read-write property and may be set to None.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="nix.Section.sections">
-<tt class="descname">sections</tt><a class="headerlink" href="#nix.Section.sections" title="Permalink to this definition">¶</a></dt>
-<dd><p>A property providing all child sections of a section. Child sections can be accessed by
-index or by their id. Sections can also be deleted: if a section is deleted, all its
-properties and child sections are removed from the file too.
-Adding new sections is achieved using the create_section method. This is a read-only
-attribute.</p>
+<dt id="nixio.pycore.Section.sections">
+<code class="descname">sections</code><a class="headerlink" href="#nixio.pycore.Section.sections" title="Permalink to this definition">¶</a></dt>
+<dd><p>A property providing all child sections of a section. Child sections
+can be accessed by index or by their id. Sections can also be deleted:
+if a section is deleted, all its properties and child sections are
+removed from the file too. Adding new sections is achieved using the
+create_section method.
+This is a read-only attribute.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -424,10 +475,11 @@ attribute.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="nix.Section.type">
-<tt class="descname">type</tt><a class="headerlink" href="#nix.Section.type" title="Permalink to this definition">¶</a></dt>
-<dd><p>The type of the entity. The type is used in order to add semantic meaning to the entity.
-This is a read-write property, but it can&#8217;t be set to None.</p>
+<dt id="nixio.pycore.Section.type">
+<code class="descname">type</code><a class="headerlink" href="#nixio.pycore.Section.type" title="Permalink to this definition">¶</a></dt>
+<dd><p>The type of the entity. The type is used in order to add semantic
+meaning to the entity. This is a read-write property, but it can’t
+be set to None.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
@@ -439,15 +491,16 @@ This is a read-write property, but it can&#8217;t be set to None.</p>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="nix.Section.updated_at">
-<tt class="descname">updated_at</tt><a class="headerlink" href="#nix.Section.updated_at" title="Permalink to this definition">¶</a></dt>
-<dd><p>The time of the last update of the entity. This is a read-only property. Use force_updated_at in order
-to change the update time.</p>
+<dt id="nixio.pycore.Section.updated_at">
+<code class="descname">updated_at</code><a class="headerlink" href="#nixio.pycore.Section.updated_at" title="Permalink to this definition">¶</a></dt>
+<dd><p>The time of the last update of the entity. This is a read-only
+property. Use <cite>force_updated_at</cite> in order to change the update
+time.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">int</td>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)">int</a></td>
 </tr>
 </tbody>
 </table>
@@ -460,136 +513,122 @@ to change the update time.</p>
 <div class="section" id="property">
 <h2>Property<a class="headerlink" href="#property" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
-<dt id="nix.Property">
-<em class="property">class </em><tt class="descclassname">nix.</tt><tt class="descname">Property</tt><big>(</big><em>(object)arg1</em><big>)</big><a class="headerlink" href="#nix.Property" title="Permalink to this definition">¶</a></dt>
+<dt id="nixio.pycore.Property">
+<em class="property">class </em><code class="descclassname">nixio.pycore.</code><code class="descname">Property</code><span class="sig-paren">(</span><em>nixparent</em>, <em>h5dataset</em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.pycore.Property" title="Permalink to this definition">¶</a></dt>
 <dd><dl class="attribute">
-<dt id="nix.Property.created_at">
-<tt class="descname">created_at</tt><a class="headerlink" href="#nix.Property.created_at" title="Permalink to this definition">¶</a></dt>
-<dd><p>The creation time of the entity. This is a read-only property. Use :py:meth:force_created_at in order to
-change the creation time.</p>
+<dt id="nixio.pycore.Property.created_at">
+<code class="descname">created_at</code><a class="headerlink" href="#nixio.pycore.Property.created_at" title="Permalink to this definition">¶</a></dt>
+<dd><p>The creation time of the entity. This is a read-only property.
+Use <cite>force_created_at</cite> in order to change the creation time.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">int</td>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)">int</a></td>
 </tr>
 </tbody>
 </table>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="nix.Property.data_type">
-<tt class="descname">data_type</tt><a class="headerlink" href="#nix.Property.data_type" title="Permalink to this definition">¶</a></dt>
+<dt id="nixio.pycore.Property.data_type">
+<code class="descname">data_type</code><a class="headerlink" href="#nixio.pycore.Property.data_type" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attribute">
-<dt id="nix.Property.definition">
-<tt class="descname">definition</tt><a class="headerlink" href="#nix.Property.definition" title="Permalink to this definition">¶</a></dt>
-<dd><p>The definition of the entity. The definition can contain a textual description of the
-entity. This is an optional read-write property, and can be None if no definition is available.</p>
+<dt id="nixio.pycore.Property.definition">
+<code class="descname">definition</code><a class="headerlink" href="#nixio.pycore.Property.definition" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="nixio.pycore.Property.delete_values">
+<code class="descname">delete_values</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#nixio.pycore.Property.delete_values" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="nixio.pycore.Property.force_created_at">
+<code class="descname">force_created_at</code><span class="sig-paren">(</span><em>t=None</em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.pycore.Property.force_created_at" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the creation time <cite>created_at</cite> to the given time
+(default: current time).</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">str</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>t</strong> (<a class="reference external" href="https://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><em>int</em></a>) – The time to set.</td>
 </tr>
 </tbody>
 </table>
 </dd></dl>
 
 <dl class="method">
-<dt id="nix.Property.delete_values">
-<tt class="descname">delete_values</tt><big>(</big><em>(Property)arg1</em><big>)</big> &rarr; None<a class="headerlink" href="#nix.Property.delete_values" title="Permalink to this definition">¶</a></dt>
+<dt id="nixio.pycore.Property.force_updated_at">
+<code class="descname">force_updated_at</code><span class="sig-paren">(</span><em>t=None</em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.pycore.Property.force_updated_at" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sets the update time <cite>updated_at</cite> to the given time.
+(default: current time)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>t</strong> (<a class="reference external" href="https://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><em>int</em></a>) – The time to set.</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nixio.pycore.Property.id">
+<code class="descname">id</code><a class="headerlink" href="#nixio.pycore.Property.id" title="Permalink to this definition">¶</a></dt>
+<dd><p>A property providing the ID of the Entity. The id is generated
+automatically, therefore the property is read-only.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#str" title="(in Python v2.7)">str</a></td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="nixio.pycore.Property.mapping">
+<code class="descname">mapping</code><a class="headerlink" href="#nixio.pycore.Property.mapping" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="nixio.pycore.Property.name">
+<code class="descname">name</code><a class="headerlink" href="#nixio.pycore.Property.name" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="method">
-<dt id="nix.Property.force_created_at">
-<tt class="descname">force_created_at</tt><big>(</big><em>(__EntityProperty)arg1</em>, <em>(int)arg2</em><big>)</big> &rarr; None :<a class="headerlink" href="#nix.Property.force_created_at" title="Permalink to this definition">¶</a></dt>
-<dd><p>Sets the creation time created_at to the given time.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>time</strong> (<a class="reference external" href="http://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)"><em>int</em></a>) &#8211; The time to set</td>
-</tr>
-<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body">None</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="method">
-<dt id="nix.Property.force_updated_at">
-<tt class="descname">force_updated_at</tt><big>(</big><em>(__EntityProperty)arg1</em><big>)</big> &rarr; None :<a class="headerlink" href="#nix.Property.force_updated_at" title="Permalink to this definition">¶</a></dt>
-<dd><p>Sets the update time updated_at to the current time.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">None</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="nix.Property.id">
-<tt class="descname">id</tt><a class="headerlink" href="#nix.Property.id" title="Permalink to this definition">¶</a></dt>
-<dd><p>A property providing the ID of the Entity. The id is generated automatically,
-therefore the property is read-only.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">str</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="nix.Property.mapping">
-<tt class="descname">mapping</tt><a class="headerlink" href="#nix.Property.mapping" title="Permalink to this definition">¶</a></dt>
+<dt id="nixio.pycore.Property.pprint">
+<code class="descname">pprint</code><span class="sig-paren">(</span><em>current_depth=-1</em>, <em>indent=2</em>, <em>max_length=80</em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.pycore.Property.pprint" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attribute">
-<dt id="nix.Property.name">
-<tt class="descname">name</tt><a class="headerlink" href="#nix.Property.name" title="Permalink to this definition">¶</a></dt>
-<dd><p>The name of an entity. The name serves as a human readable identifier.
-This is a read-write property, but it can&#8217;t be set to None.</p>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">str</td>
-</tr>
-</tbody>
-</table>
-</dd></dl>
-
-<dl class="attribute">
-<dt id="nix.Property.unit">
-<tt class="descname">unit</tt><a class="headerlink" href="#nix.Property.unit" title="Permalink to this definition">¶</a></dt>
+<dt id="nixio.pycore.Property.unit">
+<code class="descname">unit</code><a class="headerlink" href="#nixio.pycore.Property.unit" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="attribute">
-<dt id="nix.Property.updated_at">
-<tt class="descname">updated_at</tt><a class="headerlink" href="#nix.Property.updated_at" title="Permalink to this definition">¶</a></dt>
-<dd><p>The time of the last update of the entity. This is a read-only property. Use force_updated_at in order
-to change the update time.</p>
+<dt id="nixio.pycore.Property.updated_at">
+<code class="descname">updated_at</code><a class="headerlink" href="#nixio.pycore.Property.updated_at" title="Permalink to this definition">¶</a></dt>
+<dd><p>The time of the last update of the entity. This is a read-only
+property. Use <cite>force_updated_at</cite> in order to change the update
+time.</p>
 <table class="docutils field-list" frame="void" rules="none">
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">int</td>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/2.7/library/functions.html#int" title="(in Python v2.7)">int</a></td>
 </tr>
 </tbody>
 </table>
 </dd></dl>
 
 <dl class="attribute">
-<dt id="nix.Property.values">
-<tt class="descname">values</tt><a class="headerlink" href="#nix.Property.values" title="Permalink to this definition">¶</a></dt>
+<dt id="nixio.pycore.Property.values">
+<code class="descname">values</code><a class="headerlink" href="#nixio.pycore.Property.values" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -598,41 +637,11 @@ to change the update time.</p>
 <div class="section" id="value">
 <h2>Value<a class="headerlink" href="#value" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
-<dt id="nix.Value">
-<em class="property">class </em><tt class="descclassname">nix.</tt><tt class="descname">Value</tt><big>(</big><em>(object)arg1</em><big>)</big><a class="headerlink" href="#nix.Value" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="attribute">
-<dt id="nix.Value.checksum">
-<tt class="descname">checksum</tt><a class="headerlink" href="#nix.Value.checksum" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="nix.Value.data_type">
-<tt class="descname">data_type</tt><a class="headerlink" href="#nix.Value.data_type" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="nix.Value.encoder">
-<tt class="descname">encoder</tt><a class="headerlink" href="#nix.Value.encoder" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="nix.Value.filename">
-<tt class="descname">filename</tt><a class="headerlink" href="#nix.Value.filename" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="nix.Value.reference">
-<tt class="descname">reference</tt><a class="headerlink" href="#nix.Value.reference" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="nix.Value.uncertainty">
-<tt class="descname">uncertainty</tt><a class="headerlink" href="#nix.Value.uncertainty" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="attribute">
-<dt id="nix.Value.value">
-<tt class="descname">value</tt><a class="headerlink" href="#nix.Value.value" title="Permalink to this definition">¶</a></dt>
+<dt id="nixio.Value">
+<em class="property">class </em><code class="descclassname">nixio.</code><code class="descname">Value</code><span class="sig-paren">(</span><em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.Value" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="method">
+<dt id="nixio.Value.to_string">
+<code class="descname">to_string</code><span class="sig-paren">(</span><em>unit=''</em><span class="sig-paren">)</span><a class="headerlink" href="#nixio.Value.to_string" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 </dd></dl>
@@ -644,7 +653,7 @@ to change the update time.</p>
           </div>
         </div>
       </div>
-      <div class="sphinxsidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
 <p class="logo">
   <a href="index.html">
@@ -657,10 +666,12 @@ to change the update time.</p>
 
 
 
+
 <p>
-<iframe src="http://ghbtns.com/github-btn.html?user=G-Node&repo=nixpy&type=watch&count=False&size=large"
+<iframe src="https://ghbtns.com/github-btn.html?user=G-Node&repo=nixpy&type=watch&count=False&size=large&v=2"
   allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
 </p>
+
 
 
 
@@ -670,11 +681,13 @@ to change the update time.</p>
 <p>
 <a href="https://travis-ci.org/G-Node/nixpy">
     <img
-        alt="https://secure.travis-ci.org/G-Node/nixpy.png?branch=master"
-        src="https://secure.travis-ci.org/G-Node/nixpy.png?branch=master"
-    >
+        alt="https://secure.travis-ci.org/G-Node/nixpy.svg?branch=master"
+        src="https://secure.travis-ci.org/G-Node/nixpy.svg?branch=master"
+    />
 </a>
 </p>
+
+
 <h3>Navigation</h3>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="install.html">Installation Guidelines</a></li>
@@ -683,7 +696,7 @@ to change the update time.</p>
 </ul>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="api_data.html">API Documentation for Data</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">API Documentation for Metadata</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API Documentation for Metadata</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#section">Section</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#property">Property</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#value">Value</a></li>
@@ -692,17 +705,16 @@ to change the update time.</p>
 </ul>
 
 
-<div id="searchbox" style="display: none">
+<div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
       <input type="text" name="q" />
       <input type="submit" value="Go" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
+    </div>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
@@ -710,15 +722,15 @@ to change the update time.</p>
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &copy;2014, German Neuroinformatics Node, Christian Kellner, Adrian Stoewer, Andrey Sobolev, Jan Grewe, Balint Morvai.
+      &copy;2014, German Neuroinformatics Node, Christian Kellner, Adrian Stoewer, Andrey Sobolev, Jan Grewe, Balint Morvai, Achilleas Koutsou.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.2.2</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.6.0</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
       
       |
-      <a href="_sources/api_metadata.txt"
-          rel="nofollow">Page source</a></li>
+      <a href="_sources/api_metadata.rst.txt"
+          rel="nofollow">Page source</a>
     </div>
 
     

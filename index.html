@@ -1,53 +1,34 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>NIX Python Binding Documentation &mdash; Python bindings for NIX 1.1.0 Release documentation</title>
-    
+    <title>NIX Python Binding Documentation &#8212; Python bindings for NIX 1.4.7 Release documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    
-    <script type="text/javascript">
-      var DOCUMENTATION_OPTIONS = {
-        URL_ROOT:    './',
-        VERSION:     '1.1.0 Release',
-        COLLAPSE_INDEX: false,
-        FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
-      };
-    </script>
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
-    <link rel="top" title="Python bindings for NIX 1.1.0 Release documentation" href="#" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Installation Guidelines" href="install.html" />
    
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
-  </head>
-  <body>
-    <div class="related">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             accesskey="I">index</a></li>
-        <li class="right" >
-          <a href="install.html" title="Installation Guidelines"
-             accesskey="N">next</a> |</li>
-        <li><a href="#">Python bindings for NIX 1.1.0 Release documentation</a> &raquo;</li> 
-      </ul>
-    </div>  
+  </head><body>
+  
 
     <div class="document">
       <div class="documentwrapper">
         <div class="bodywrapper">
-          <div class="body">
+          <div class="body" role="main">
             
   <div class="section" id="nix-python-binding-documentation">
 <h1>NIX Python Binding Documentation<a class="headerlink" href="#nix-python-binding-documentation" title="Permalink to this headline">¶</a></h1>
@@ -59,8 +40,9 @@ to use it you also have to have the nix library installed.</p>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="install.html">Installation Guidelines</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="install.html#install-nix-and-other-dependencies">Install NIX and other dependencies</a></li>
-<li class="toctree-l2"><a class="reference internal" href="install.html#install-nixpy">Install NIXPy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html#dependencies">Dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html#installation-instructions">Installation instructions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html#advanced-installation">Advanced installation</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="overview.html">Overview</a><ul>
@@ -110,7 +92,7 @@ to use it you also have to have the nix library installed.</p>
           </div>
         </div>
       </div>
-      <div class="sphinxsidebar">
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
 <p class="logo">
   <a href="#">
@@ -123,10 +105,12 @@ to use it you also have to have the nix library installed.</p>
 
 
 
+
 <p>
-<iframe src="http://ghbtns.com/github-btn.html?user=G-Node&repo=nixpy&type=watch&count=False&size=large"
+<iframe src="https://ghbtns.com/github-btn.html?user=G-Node&repo=nixpy&type=watch&count=False&size=large&v=2"
   allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
 </p>
+
 
 
 
@@ -136,11 +120,13 @@ to use it you also have to have the nix library installed.</p>
 <p>
 <a href="https://travis-ci.org/G-Node/nixpy">
     <img
-        alt="https://secure.travis-ci.org/G-Node/nixpy.png?branch=master"
-        src="https://secure.travis-ci.org/G-Node/nixpy.png?branch=master"
-    >
+        alt="https://secure.travis-ci.org/G-Node/nixpy.svg?branch=master"
+        src="https://secure.travis-ci.org/G-Node/nixpy.svg?branch=master"
+    />
 </a>
 </p>
+
+
 <h3>Navigation</h3>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="install.html">Installation Guidelines</a></li>
@@ -153,17 +139,16 @@ to use it you also have to have the nix library installed.</p>
 </ul>
 
 
-<div id="searchbox" style="display: none">
+<div id="searchbox" style="display: none" role="search">
   <h3>Quick search</h3>
+    <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
       <input type="text" name="q" />
       <input type="submit" value="Go" />
       <input type="hidden" name="check_keywords" value="yes" />
       <input type="hidden" name="area" value="default" />
     </form>
-    <p class="searchtip" style="font-size: 90%">
-    Enter search terms or a module, class or function name.
-    </p>
+    </div>
 </div>
 <script type="text/javascript">$('#searchbox').show(0);</script>
         </div>
@@ -171,15 +156,15 @@ to use it you also have to have the nix library installed.</p>
       <div class="clearer"></div>
     </div>
     <div class="footer">
-      &copy;2014, German Neuroinformatics Node, Christian Kellner, Adrian Stoewer, Andrey Sobolev, Jan Grewe, Balint Morvai.
+      &copy;2014, German Neuroinformatics Node, Christian Kellner, Adrian Stoewer, Andrey Sobolev, Jan Grewe, Balint Morvai, Achilleas Koutsou.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.2.2</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.6.0</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
       
       |
-      <a href="_sources/index.txt"
-          rel="nofollow">Page source</a></li>
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
     </div>
 
     
